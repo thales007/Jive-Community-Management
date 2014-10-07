@@ -30,20 +30,13 @@ auth = "Basic " + base64.encodestring('%s:%s' % (user, password)).replace("\n","
 headers = { "Content-Type": "application/json", "Authorization": auth }
 
 
-#Group invites uri
-uri = "/api/core/v3/invites/places/{}?count={}".format(placeID,maxReturn)
-base_url = "https://community.com" #Community base URL
-url = base_url + uri
-
-
 #Loop through and compile all invites
 while (start < totalInvites):
     #Group invites uri
     uri = "/api/core/v3/invites/places/{}?count={}&startIndex={}".format(placeID,maxReturn,start)
-    base_url = "https://geonet.esri.com"
+    base_url = "https://community.com"
     url = base_url + uri
     start += maxReturn
-    #Define headers
 
     try:
         #Create list of invite IDs
@@ -66,7 +59,6 @@ while (start < totalInvites):
 
         #If there json data exists continue process
             for dataItem in jsonData["list"]:
-               
                 inviteList.append(dataItem["id"])
             
         else:
