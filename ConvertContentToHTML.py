@@ -1,6 +1,6 @@
 #######################################
 # Title: Convert Content to HTML
-# Description: Concerts content from a space and creates HTML files.
+# Description: Converts content from a space and creates HTML files.
 # Author: Timothy Hales
 # Date: 10/7/2014
 # Version: 1.0
