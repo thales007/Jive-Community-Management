@@ -5,7 +5,7 @@ Jive Software community management tools using Python and the Jive Rest API.
 
 
 
-<h3>GetDeleteGroupInvites.py </h3>
+<b>GetDeleteGroupInvites.py </b>
 Description: Gets a list of invite IDs and deletes them from the group.
   There is no notification to the user of the invited being recinded.
   Update community base URL, username, and password.
