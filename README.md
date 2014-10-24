@@ -16,7 +16,7 @@ Gets a list places and their palceIDs for use in other URIs
 
 <b>GetDeleteGroupInvites.py </b><br/>
 Gets a list of invite IDs and deletes them from the group.
-  There is no notification to the user of the invited being recinded.
+  There is no notification to the user of the invited being rescinded.
   Update community base URL, username, and password.
 
 <b>GetDeleteGroupMembers.py</b><br/>
